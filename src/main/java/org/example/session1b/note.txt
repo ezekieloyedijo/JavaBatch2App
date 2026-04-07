@@ -1,0 +1,26 @@
+BANKING MANAGEMENT SYSTEM
+
+🧠 📌 QUESTION (Give to Students)
+
+You are building a Banking System with:
+
+Customer
+Account
+Transaction
+
+🔥 Requirements:
+A customer can have multiple accounts
+You must find an account quickly using account number
+Each account should keep transactions in the order they occurred
+A transaction should not be duplicated
+❓ TASK
+Choose List, Set, or Map
+Explain your choice
+Implement using proper structure
+
+✅ EXPECTED ANSWERS (DATA STRUCTURE + REASONS)
+Use Case	Data Structure	Reason
+Store accounts	Map<String, Account>	Fast lookup
+Customer accounts	Set<Account>	No duplicates
+Transactions	List<Transaction>	Maintain order
+Prevent duplicate transactions	Set<Transaction>	Enforces uniqueness
