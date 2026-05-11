@@ -1,0 +1,33 @@
+Class Exercise
+1 You are tasked with building a simple Event Ticketing System
+for a platform where users can browse events and book tickets
+
+The system should support the following:
+1 Event organizers can create events
+2 users can :
+a View all available events
+b Book tickets for an event
+c Cancel their booking
+
+3 The system should
+a Prevent booking more tickets than available
+b Track which user booked which event
+c Allow a user to book multiple events
+
+4 A report should be available to
+a List all bookings for an event
+b List all events a user has booked
+
+Assignment
+5 Create the service to create an Event
+complete the method to updateNumOfTicket
+
+Solution
+1 Create the different packages required - Modularity
+2 Identify the entities in the application - User, Event, Booking
+User - id, name, email ✅
+Event - id, name, location, Date, numOftickets
+Booking - id, userId, eventId
+
+
+
