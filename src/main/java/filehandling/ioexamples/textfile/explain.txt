@@ -1,0 +1,39 @@
+Simplified Steps of Reading From a File in Java
+1 Create a connection to the file (new FileReader(filePath)) :  Java needs to know which file to open.
+2 Create a reader (new BufferedReader(...)):  The reader helps Java read the file content.
+3 Read the file line by line (reader.readLine()) : Java takes the content gradually instead of all at once.
+4 Store the content (StringBuilder content): Save the lines somewhere so they can be used later.
+5 Close the file (try with resources automatically closes it): Release system resources after reading is complete.
+
+The Well Analogy
+Now imagine to want to go to the well to fetch water:
+So instead of going repeatedly with a cup to the well to get the water, you go with a bigger bucket so you can
+get the job done faster.
+
+What File Reader Alone Does
+Take Small cup
+Fetch small water
+Walk
+Pour into drum
+Repeat many times
+It works but it is slower, because many trips happened
+In Java, it means
+
+More direct disk access, more operations, lower efficiency
+
+
+Real World                          Java
+1 Well (Source)                     File (you want to read)
+2 Water                             Data/Text
+3 Small cup                         FileReader
+4 Big Bucket                        BufferedReader
+5 Drum/Storage                      StringBuilder
+6 Carrying water repeatedly         Reading line by line
+
+
+Simplified Steps of Writing to a File in Java
+1 Open a stream to the file (new FileWriter(filePath))
+2 Prepare the writer (new BufferedWriter(...))
+3 Send data to the writer (writer.write(content))
+4 Transfer data into the file (Happens internally)
+5 Close stream (try-with-resources)

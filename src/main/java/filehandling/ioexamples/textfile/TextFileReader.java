@@ -19,9 +19,9 @@ public class TextFileReader {
             String line;
 
             while ((line = reader.readLine()) != null) {
-
+                // This adds the line into content.
                 content.append(line)
-                        .append(System.lineSeparator());
+                        .append(System.lineSeparator()); // preserves line break
             }
 
         } catch (IOException e) {
