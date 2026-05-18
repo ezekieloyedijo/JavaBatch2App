@@ -1,0 +1,36 @@
+Real-World Analogy (Water Tanker + Packages)
+Imagine:
+
+An image file is like a warehouse full of tiny sealed packages.
+Each package contains a tiny piece of image information.
+
+Your program wants to transport ALL packages to another location.
+
+Java Equivalent
+Real World	Java
+Warehouse	Image file
+Packages	Bytes
+Transport pipe	Stream
+Small transport system	FileInputStream
+Large loading truck	BufferedInputStream
+Storage room	byte[] data
+
+What FileInputStream Does
+This opens a stream to the image file. Think of it as: Opening the warehouse door.
+Now packages (bytes) can flow out.
+
+What BufferedInputStream Does
+This improves efficiency.
+
+Instead of collecting one tiny package repeatedly:
+Load many packages into a large truck once →
+Deliver gradually from truck
+
+Simplified Steps of Reading an Image File
+1. Locate the image file - imagePath
+2. Open a stream to the image - new FileInputStream(imagePath)
+3. Add buffering for faster reading - new BufferedInputStream(...)
+4. Read the image bytes into memory - readAllBytes()
+5. Store the bytes in an array - byte[] data
+6. Close the stream - try-with-resources
+7. Return the image data - return data
