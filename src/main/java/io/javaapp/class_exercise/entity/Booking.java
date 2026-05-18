@@ -1,5 +1,7 @@
 package io.javaapp.class_exercise.entity;
 
+import io.javaapp.class_exercise.dto.BookingDto;
+
 public class Booking {
     private Integer id = 0;
     private Integer userId;

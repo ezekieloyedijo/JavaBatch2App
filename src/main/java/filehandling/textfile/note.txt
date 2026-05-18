@@ -1,0 +1,22 @@
+Simplified Steps of reading a file in Java
+1 Create a connection to the file
+2 Create a Reader
+3 Read the file line by line
+4 Store the content
+5 close the file
+
+Real world Analogy              Java
+1 Well(Source)                  File (You want to read from)
+2 Water                         Data/text
+3 Small cup                     FileReader
+4 Big bucket                    BufferedReader
+5 Drum/storage                  StringBuilder
+6 Carrying water repeatedly     Reading line by line
+
+
+simplified Steps of Writing to a file in Java
+1 Open a stream to the file (new fileWriter)
+2 Prepare the writer (new BufferedWriter)
+3 Send the data to the writer (write.write)
+4 Transfer data into the file (Happens internally)
+5 close the stream
