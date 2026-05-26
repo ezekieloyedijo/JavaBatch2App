@@ -1,0 +1,8 @@
+Simplified Steps of reading an Image File
+1 Locate the image file - ImagePath
+2. Open a stream to the image - new FileInputStream(imagePath)
+3. Add buffering for faster reading - new BufferedInputStream(...)
+4 Read the image bytes into memory - readAllBytes()
+5. Store the bytes in an array - byte[] data
+6. close the stream - try-with-resources
+7. Return the image data

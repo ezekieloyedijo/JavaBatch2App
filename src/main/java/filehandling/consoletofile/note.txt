@@ -1,0 +1,8 @@
+1 Open a connection to keyboard input - System.in
+2 Convert keyboard bytes into readable text - InputStreamReader
+3 Add buffering for efficient reading - BufferedReader
+4 Ask the user for input - System.out.println(...)
+5 Read the types text - reader.readline()
+6 Store the entered  - StringBuilder
+7 Return the collected data - return details.toString()
+8 Close resources automatically - try-with-resources
