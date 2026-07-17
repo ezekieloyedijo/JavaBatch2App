@@ -1,0 +1,60 @@
+Threading
+
+Process
+Is a program in execution or a program that is executed.
+
+Thread
+A thread is the smallest unit of execution inside a process
+
+Why Concurrency Exists
+
+Thread Lifecycle
+Thread object moves through several states
+1 Runnable : ready to run
+2 Running: Actively executing
+3 Blocked: waiting for a resource
+4 Waiting: waiting indefinitely
+5 Timed waiting: waiting for a specific period
+6 Terminated : execution completed
+
+Thread Class Methods
+1 start - starts a thread
+2 run - contains thread logic
+3 sleep - pauses execution
+4 join - waits for another thread to finish
+5 isAlive - checks whether a thread is still running
+6 interrupt - request interruption of a thread
+6 getName - returns thread name
+7 setName - Assigns a thread a name
+
+Multithreading
+Is the ability of a process to execute multiple threads concurrently
+
+Multithreading vs Multitasking
+Multitasking
+Multiple processes running e.g chrome, spotify VS code
+
+Multithreading
+Multiple threads inside one process
+e.g chrome tab rendering and downloading content simultaneously
+
+Race Conditions
+Problem
+Multiple threads access the same data
+
+Cause
+Shared data
+Concurrent modification
+
+Solutions
+Synchronization
+
+Deadlocks
+A deadlock occurs when threads wait forever for each other
+
+Virtual threads
+Platform threads are expensive
+creating thousands of OS threads consumes memory
+
+Virtual threads are lightweight threads managed by JVM
+

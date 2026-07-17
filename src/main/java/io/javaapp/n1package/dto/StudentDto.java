@@ -1,5 +1,7 @@
 package io.javaapp.n1package.dto;
 
+import jdbc.enums.Gender;
+
 public class StudentDto {
     private String name;
     private String password;
@@ -33,5 +35,9 @@ public class StudentDto {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Gender getGender() {
+        return null;
     }
 }

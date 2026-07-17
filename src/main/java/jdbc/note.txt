@@ -1,0 +1,9 @@
+Steps to connecting a Java Application to a MySQL DB wih JDBC
+
+1 Have a database running (MySQl server)
+2 Have a Java program
+3 Use a JDBC driver as translator between Java and MySQL
+4 Establish A CONNECTION
+5 Send SQL commands
+6 Process the results
+7 Close resources
