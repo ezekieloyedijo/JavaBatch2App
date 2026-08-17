@@ -1,0 +1,15 @@
+Builder Design Pattern is a creational pattern used to construct complex
+objects step by step. It separates the construction of an object from its
+representation, enabling the same construction process to create different
+representations.
+
+Example
+Create a student profile builder to generate detailed student profiles
+
+Scenario: student have a lot of information stored in their profile. Some fields are
+required, while others are optional. Creating this profile through a constructor would
+be messy, and error-prone, especially when all fields are needed at once.
+
+Task - Implement a builder pattern, to simplify the student profiles.
+
+Mandatory fields - Full name, studentId, grade

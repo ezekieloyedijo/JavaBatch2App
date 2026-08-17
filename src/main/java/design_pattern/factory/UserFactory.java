@@ -1,0 +1,16 @@
+package design_pattern.factory;
+
+public class UserFactory{
+    public static UserService createUser(String type) {
+        switch(type.toLowerCase()) {
+            case "teacher":
+                return new Teacher();
+            case "student":
+                return new Student();
+            case "admin":
+                return new Admin();
+            default:
+                throw new IllegalArgumentException("unknown user type: " + type);
+        }
+    }
+}
